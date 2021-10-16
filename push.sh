@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 mkdir /public
 cd /public
 git init
