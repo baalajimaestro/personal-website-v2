@@ -23,7 +23,7 @@ Many people who rely on OSS software, feel entitled to get both support and main
 Which is absolutely not true!
 
 
-![Meme](meme.png)
+![Meme](meme.webp)
 
 
 Some project maintainers may provide QA and support like RHEL/SLES, in the form of a contract. This isnt the case with FOSS, where you aren't required to sweat and cry for the community. Let alone QA, you aren't required to publish documentation,

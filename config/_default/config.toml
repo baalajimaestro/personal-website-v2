@@ -8,7 +8,7 @@ copyright = "© 2021 Maestro Creativescape."
 
 [author]
 name = "baalajimaestro"
-image = "images/logo.png"
+image = "images/logo.webp"
 
  links = [
     { github = "https://github.com/baalajimaestro" },
