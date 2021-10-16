@@ -1,0 +1,10 @@
+baseURL = "https://baalajimaestro.me"
+languageCode = "en-US"
+title = "baalajimaestro"
+
+[author]
+name = "Baalaji"
+image = ""
+links = [
+  { twitter = "https://twitter.com/baalajimaestro" }
+]
