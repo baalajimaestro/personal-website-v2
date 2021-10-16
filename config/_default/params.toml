@@ -27,7 +27,7 @@ description = "baalajimaestro's personal website"
   showHeadingAnchors = true
   showPagination = true
   showReadingTime = true
-  sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email"]
+  sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email", "telegram", "ycombinator"]
 
 [list]
   showBreadcrumbs = false
