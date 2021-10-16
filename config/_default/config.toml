@@ -2,9 +2,22 @@ baseURL = "https://baalajimaestro.me"
 languageCode = "en-US"
 title = "baalajimaestro"
 
+enableEmoji = true
+enableRobotsTXT = false
+
 [author]
-name = "Baalaji"
-image = ""
-links = [
-  { twitter = "https://twitter.com/baalajimaestro" }
-]
+name = "baalajimaestro"
+image = "images/logo.png"
+
+ links = [
+    { github = "https://github.com/baalajimaestro" },
+    { gitlab = "https://gitlab.com/baalajimaestro" },
+    { sourcehut = "https://git.sr.ht/~baalajimaestro" },
+    { telegram = "https://t.me/baalajimaestro" },
+    { discord = "https://discord.com/users/404797553272684555" },
+    { instagram = "https://instagram.com/baalajimaestro" },
+    { reddit = "https://reddit.com/user/baalajimaestro" },
+    { twitter = "https://twitter.com/baalajimaestro" },
+    { matrix = "https://matrix.to/#/@baalajimaestro:matrix.org" },
+    { email = "mailto:me@baalajimaestro.me" },
+  ]
