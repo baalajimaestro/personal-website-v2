@@ -13,7 +13,6 @@ blocks:
       - name: Job
         commands:
           - checkout
-          - git submodule update --init --recursive
           - docker build . -t ci
           - docker run -v $(pwd):/app -e GH_PERSONAL_TOKEN=${GH_PERSONAL_TOKEN} ci
       secrets:
