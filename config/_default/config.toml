@@ -3,7 +3,7 @@ languageCode = "en-US"
 title = "baalajimaestro"
 
 enableEmoji = true
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 [author]
 name = "baalajimaestro"
