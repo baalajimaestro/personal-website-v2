@@ -15,6 +15,6 @@ Vivaldi. When I installed Chrome for this specific purpose, I saw gtag.js take a
 
 Nuking it off and rebuilding the site, bumped my score straight to 95, which seems astonishing.
 
-As a result, I went with self-hosted shynet (https://github.com/milesmcc/shynet/) and it's now available at analytics.baalajimaestro.me.
+As a result, I went with self-hosted shynet (https://github.com/milesmcc/shynet/) and it's now available at https://analytics.baalajimaestro.me.
 
-My shynet instance respects DNT, and is also GDPR compliant, should you have any issues with it, feel free to message me on any of the contact options listed below.
+My shynet instance respects DNT, and is also GDPR compliant, should you have any issues with it, feel free to message me on any of the contact options listed [here](https://links.baalajimaestro.me.)
