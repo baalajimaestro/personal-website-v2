@@ -24,3 +24,18 @@
   name = "Contact"
   pageRef = "contact"
   weight = 30
+
+[[footer]]
+  name = "Socials/Portfolio"
+  url = "https://links.baalajimaestro.me"
+  weight = 10
+
+[[footer]]
+  name = "Donate Me"
+  url = "https://paypal.me/baalajimaestro"
+  weight = 20
+
+[[footer]]
+  name = "RSS"
+  url = "https://baalajimaestro.me/posts/index.xml"
+  weight = 30
