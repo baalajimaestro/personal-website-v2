@@ -3,6 +3,10 @@ title: "Vendor Blob Extraction"
 date: 2019-10-10T21:24:00+05:30
 ---
 
+{{< alert >}}
+**Warning!** This article is deprecated, please use [this link](https://baalajimaestro.me/posts/extract-vendor-2/)
+{{< /alert >}}
+
 ## How to extract vendor blobs from stock rom?
 
 I got asked this question a lot, so I'll post it here. Its gonna just be steps on how to do it.
