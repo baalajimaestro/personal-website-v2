@@ -7,7 +7,8 @@ git remote add origin https://baalajimaestro:${GH_PERSONAL_TOKEN}@github.com/baa
 
 echo -e "Deploying updates to GitHub..."
 cd /app
-hugo -d /public
+hugo mod get -u
+hugo --gc --minify -d /public
 
 # Go To Public folder
 cd /public
