@@ -1,6 +1,16 @@
 {{ if eq hugo.Environment "production" }}
+
+<!-- Analytics -->
 <noscript>
     <img src="https://analytics.baalajimaestro.me/ingress/1623c4bf-a376-41cd-b938-a439d2cb32ac/pixel.gif">
 </noscript>
 <script defer src="https://analytics.baalajimaestro.me/ingress/1623c4bf-a376-41cd-b938-a439d2cb32ac/script.js"></script>
+
+<!-- Redirect for pages.dev -->
+<script>
+    if (window.location.hostname !== "baalajimaestro.me" && window.location.hostname !== "www.baalajimaestro.me"){
+        window.top.location.href = 'https://baalajimaestro.me';
+    }
+</script>
+
 {{ end }}
