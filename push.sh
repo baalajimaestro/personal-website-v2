@@ -3,7 +3,7 @@
 mkdir /public
 cd /public
 git init
-git remote add origin https://baalajimaestro:${GH_PERSONAL_TOKEN}@github.com/baalajimaestro/personal-website
+git remote add origin https://baalajimaestro:${GITEA_TOKEN}@git.baalajimaestro.me/baalajimaestro/personal-website.git
 
 echo -e "Deploying updates to GitHub..."
 cd /app

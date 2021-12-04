@@ -8,3 +8,6 @@ steps:
   commands:
   - apk update && apk add curl git go
   - sh /root/push.sh
+  environment:
+    GITEA_TOKEN:
+      from_secret: GITEA_TOKEN
