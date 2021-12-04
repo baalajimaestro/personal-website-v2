@@ -7,7 +7,7 @@ steps:
   image: equalos/hugo:extended-alpine
   commands:
   - apk update && apk add curl git go
-  - sh /root/push.sh
+  - sh push.sh
   environment:
     GITEA_TOKEN:
       from_secret: GITEA_TOKEN
