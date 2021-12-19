@@ -4,7 +4,7 @@ type: docker
 
 steps:
 - name: Static Site Builder
-  image: equalos/hugo:extended-alpine
+  image:  ghcr.io/peaceiris/hugo:latest
   commands:
   - apk update && apk add curl git go
   - sh push.sh
