@@ -1,15 +1,8 @@
----
-title: "About Me"
-date: 2021-10-16
-draft: false
-description: "About me"
-slug: "about"
-tags: ["about"]
-showDate: false
-showAuthor: false
-showReadingTime: false
-showPagination: false
----
++++
+title = "About Me"
+id = "about"
+date = 2021-10-16T12:29:41+05:30
++++
 
 I am Baalaji Balasubramani, a 22 year old, popularly known around the internet world as baalajimaestro.
 
