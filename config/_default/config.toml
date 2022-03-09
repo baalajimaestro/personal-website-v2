@@ -1,14 +1,8 @@
 baseURL = "https://baalajimaestro.me"
-languageCode = "en-US"
-title = "baalajimaestro"
 
 enableEmoji = true
 enableRobotsTXT = true
-copyright = "&copy; 2021 Maestro Creativescape."
+defaultContentLanguage = "en"
 
-[author]
-name = "baalajimaestro"
-image = "images/logo.webp"
-
- links = [
-  ]
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
