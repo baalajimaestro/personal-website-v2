@@ -6,13 +6,14 @@
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
 colorScheme = "congo"
+defaultAppearance = "dark"
 # logo = "images/logo.png"
 description = "baalajimaestro's personal website"
 # mainSections = ["section1", "section2"]
 # robots = ""
 
 [homepage]
-  layout = "custom" # valid options: page, profile, custom
+  layout = "profile" # valid options: page, profile, custom
   showRecent = false
 
 [article]
