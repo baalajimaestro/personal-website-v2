@@ -1,0 +1,6 @@
+site-builder:
+  image: ghcr.io/peaceiris/hugo:latest
+  stage: build
+  script:
+      - apk update && apk add curl git go
+      - sh push.sh
