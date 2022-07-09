@@ -3,4 +3,5 @@
 .DS_Store
 .hugo_build.lock
 .idea
+content/
 
