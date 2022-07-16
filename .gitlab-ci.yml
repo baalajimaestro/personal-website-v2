@@ -1,8 +1,15 @@
-site-builder:
-  image:
-      name: ghcr.io/peaceiris/hugo:latest
-      entrypoint: [""]
-  stage: build
-  script:
-      - apk update && apk add curl git go
-      - sh push.sh
+stages:
+    - build-and-push
+image:
+    name: ghcr.io/peaceiris/hugo:latest
+    entrypoint: [""]
+
+before_script:
+    - apk update && apk add curl git go
+    - git config --global user.name baalajimaestro
+    - git config --global user.email me@baalajimaestro.me
+
+build-and-push:
+    stage: build-and-push
+    script:
+        - sh push.sh
