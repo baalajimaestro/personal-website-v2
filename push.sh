@@ -9,7 +9,7 @@ rm -rf content/.gitlab-ci.yml
 mkdir /public
 cd /public
 git init
-git remote add origin https://baalajimaestro:${CI_JOB_TOKEN}@git.baalajimaestro.me/baalajimaestro/personal-website.git
+git remote add origin https://gitlab-ci-token:${CI_JOB_TOKEN}@git.baalajimaestro.me/baalajimaestro/personal-website.git
 
 echo -e "Deploying updates to GitHub..."
 cd $BASE_DIR
