@@ -26,16 +26,21 @@
   weight = 30
 
 [[footer]]
+  name = "Source Code"
+  url = "https://git.baalajimaestro.me/baalajimaestro/personal-website/"
+  weight = 10
+
+[[footer]]
   name = "Socials/Portfolio"
   url = "https://links.baalajimaestro.me"
-  weight = 10
+  weight = 20
 
 [[footer]]
   name = "Donate Me"
   url = "https://paypal.me/baalajimaestro"
-  weight = 20
+  weight = 30
 
 [[footer]]
   name = "RSS"
   url = "https://baalajimaestro.me/posts/index.xml"
-  weight = 30
+  weight = 40
