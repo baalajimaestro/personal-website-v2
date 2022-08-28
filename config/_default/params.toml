@@ -20,7 +20,7 @@ description = "baalajimaestro's personal website"
   showDate = true
   dateFormat = "2 January 2006"
   showAuthor = true
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   showHeadingAnchors = true
@@ -29,7 +29,7 @@ description = "baalajimaestro's personal website"
   sharingLinks = ["facebook", "twitter", "reddit", "linkedin", "email", "telegram", "ycombinator"]
 
 [list]
-  showBreadcrumbs = false
+  showBreadcrumbs = true
   groupByYear = true
 
 [taxonomy]
