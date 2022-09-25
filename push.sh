@@ -1,8 +1,8 @@
 #!/bin/sh
 
 BASE_DIR=$(pwd)
-
-git clone https://${CONTENT_REPO_USERNAME}:${CONTENT_REPO_TOKEN}@git.baalajimaestro.me/baalajimaestro/${CONTENT_REPO_GIT} content
+REPO="https://${CONTENT_REPO_USERNAME}:${CONTENT_REPO_TOKEN}@git.baalajimaestro.me/baalajimaestro/${CONTENT_REPO_GIT}"
+git clone "$REPO" -b $(git ls-remote --tags --refs "$REPO" | tail -n1 | cut -d/ -f3) content
 rm -rf content/.obsidian
 rm -rf content/.gitlab-ci.yml
 
