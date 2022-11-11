@@ -1,7 +1,7 @@
 stages:
     - build-and-push
 image:
-    name: klakegg/hugo:alpine
+    name: klakegg/hugo:ext-alpine
     entrypoint: [""]
 
 before_script:
