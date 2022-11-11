@@ -1,7 +1,7 @@
 stages:
     - build-and-push
 image:
-    name: ghcr.io/peaceiris/hugo:latest
+    name: klakegg/hugo:alpine
     entrypoint: [""]
 
 before_script:
