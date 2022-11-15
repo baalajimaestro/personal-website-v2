@@ -21,7 +21,7 @@ current_time = str(int(time()))
 
 # Clone our content
 content_repo = Repo.clone_from(
-    f"https://${content_repo_username}:${content_repo_token}@git.baalajimaestro.me/baalajimaestro/${content_repo_git}.git",
+    f"https://{content_repo_username}:{content_repo_token}@git.baalajimaestro.me/baalajimaestro/{content_repo_git}.git",
     f"{base_dir}/content",
 )
 
@@ -32,7 +32,7 @@ os.chdir(out_dir)
 repo = Repo.init(out_dir)
 repo.create_remote(
     "origin",
-    f"https://${base_repo_user}:${base_repo_token}@git.baalajimaestro.me/baalajimaestro/personal-website.git",
+    f"https://{base_repo_user}:{base_repo_token}@git.baalajimaestro.me/baalajimaestro/personal-website.git",
 )
 
 # Build the binaries
