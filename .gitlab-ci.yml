@@ -12,4 +12,4 @@ before_script:
 build-and-push:
     stage: build-and-push
     script:
-        - python3 .ci.py
+        - python3 .buildpush.py
