@@ -13,7 +13,6 @@ git remote add origin https://${REPO_DEPLOY_USERNAME}:${REPO_DEPLOY_TOKEN}@git.b
 
 echo -e "Deploying updates to GitHub..."
 cd $BASE_DIR
-hugo mod get -u
 hugo --gc --minify -d /public
 
 # Go To Public folder
