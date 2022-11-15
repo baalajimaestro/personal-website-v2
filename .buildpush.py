@@ -16,7 +16,7 @@ out_dir = os.environ.get("OUT_DIR")
 # Find absolute path of current directory
 cwd = os.getcwd()
 path = Path(cwd)
-base_dir = str(path.parent.absolute())
+base_dir = str(path)
 current_time = str(int(time()))
 
 # Clone our content
