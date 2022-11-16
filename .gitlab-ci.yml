@@ -11,5 +11,7 @@ before_script:
     - pip3 install GitPython
 build-and-push:
     stage: build-and-push
+    variables:
+        HUGO_ENV: production
     script:
         - python3 .buildpush.py
