@@ -4,5 +4,7 @@ enableEmoji = true
 enableRobotsTXT = true
 defaultContentLanguage = "en"
 
+disableHugoGeneratorInject = true
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
