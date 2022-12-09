@@ -1,6 +1,6 @@
 #! /bin/sh
 
-apk update && apk add python3 py3-pip git go
+apt update && apt install python3 python3-pip git go -y
 git config --global user.name baalajimaestro
 git config --global user.email me@baalajimaestro.me
 pip3 install GitPython
