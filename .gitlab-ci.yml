@@ -2,3 +2,4 @@ build-and-push:
     stage: build
     script:
         - docker run -v $(pwd):/app -w /app -e BASE_REPO_TOKEN="$BASE_REPO_TOKEN" -e BASE_REPO_USERNAME="$BASE_REPO_USERNAME" -e CONTENT_REPO_GIT="$CONTENT_REPO_GIT" -e CONTENT_REPO_TOKEN="$CONTENT_REPO_TOKEN" -e CONTENT_REPO_USERNAME="$CONTENT_REPO_USERNAME" -e OUT_DIR="$OUT_DIR" klakegg/hugo:ext-debian-ci sh .build.sh
+        - docker run -v $(pwd):/app busybox rm -rf /app/content /app/resources
