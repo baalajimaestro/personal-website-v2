@@ -23,6 +23,7 @@ current_time = str(int(time()))
 content_repo = Repo.clone_from(
     f"https://{content_repo_username}:{content_repo_token}@git.baalajimaestro.me/baalajimaestro/{content_repo_git}.git",
     f"{base_dir}/content",
+    branch="prod"
 )
 
 
