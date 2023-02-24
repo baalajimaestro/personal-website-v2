@@ -1,6 +1,6 @@
 #! /bin/sh
 
-apt update && apt install python3 python3-pip -y
+apk add --no-cache python3 py3-pip git
 git config --global user.name baalajimaestro
 git config --global user.email me@baalajimaestro.me
 pip3 install GitPython
