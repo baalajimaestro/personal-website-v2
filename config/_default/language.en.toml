@@ -1,9 +1,7 @@
 languageCode = "en"
 languageName = "English"
-displayName = "EN"
-isoCode = "en"
 weight = 1
-rtl = false
+
 
 copyright = "&copy; 2023 Maestro Creativescape."
 title = "baalajimaestro"
@@ -12,3 +10,9 @@ title = "baalajimaestro"
 name = "baalajimaestro"
 image = "logo.webp"
 headline = "DevOps Engineer, and Self-taught System Administrator"
+
+[params]
+  isoCode = "en"
+  displayName = "EN"
+  rtl = false
+  dateFormat = "2 January 2006"
