@@ -1,6 +1,6 @@
 #! /bin/sh
 
-apk add git py3-pip python3 openssh-client
+apk add git python3 py3-gitpython openssh-client
 
 mkdir ~/.ssh
 chmod 700 ~/.ssh
@@ -12,8 +12,6 @@ echo '[git.baalajimaestro.me]:29999 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHJWhNlV
 
 git config --global user.name baalajimaestro
 git config --global user.email me@baalajimaestro.me
-
-pip3 install GitPython
 
 export HUGO_ENV=production
 
