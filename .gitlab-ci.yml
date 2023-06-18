@@ -1,5 +1,7 @@
 build-and-push:
     stage: build
+    before_script:
+        - chmod 600 $SSH_SECRET_KEY
     script:
-        - docker run -v $(pwd):/app -w /app -e BASE_REPO_TOKEN="$BASE_REPO_TOKEN" -e BASE_REPO_USERNAME="$BASE_REPO_USERNAME" -e CONTENT_REPO_GIT="$CONTENT_REPO_GIT" -e CONTENT_REPO_TOKEN="$CONTENT_REPO_TOKEN" -e CONTENT_REPO_USERNAME="$CONTENT_REPO_USERNAME" -e OUT_DIR="$OUT_DIR" registry.baalajimaestro.me/baalajimaestro/hugo-alpine-ext:latest sh .build.sh
+        - docker run -v $(pwd):/app -w /app -v "$SSH_SECRET_KEY":/tmp/ssh-key -e CONTENT_REPO_GIT="$CONTENT_REPO_GIT" -e OUT_DIR="$OUT_DIR" registry.baalajimaestro.me/baalajimaestro/hugo-alpine-ext:latest sh .build.sh
         - docker run -v $(pwd):/app busybox rm -rf /app/content /app/resources

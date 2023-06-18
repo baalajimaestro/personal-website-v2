@@ -6,11 +6,7 @@ from time import time
 from pathlib import Path
 
 # All the env vars
-base_repo_user = os.environ.get("BASE_REPO_USERNAME")
-base_repo_token = os.environ.get("BASE_REPO_TOKEN")
 content_repo_git = os.environ.get("CONTENT_REPO_GIT")
-content_repo_username = os.environ.get("CONTENT_REPO_USERNAME")
-content_repo_token = os.environ.get("CONTENT_REPO_TOKEN")
 out_dir = os.environ.get("OUT_DIR")
 
 # Find absolute path of current directory
@@ -19,11 +15,15 @@ path = Path(cwd)
 base_dir = str(path)
 current_time = str(int(time()))
 
+# Set SSH Key path
+git_ssh_cmd = "ssh -i /tmp/ssh-key"
+
 # Clone our content
 content_repo = Repo.clone_from(
-    f"https://{content_repo_username}:{content_repo_token}@git.baalajimaestro.me/baalajimaestro/{content_repo_git}.git",
+    f"ssh://git@git.baalajimaestro.me:29999/baalajimaestro/{content_repo_git}.git",
     f"{base_dir}/content",
-    branch="prod"
+    branch="prod",
+    env=dict(GIT_SSH_COMMAND=git_ssh_cmd)
 )
 
 
@@ -33,7 +33,7 @@ os.chdir(out_dir)
 repo = Repo.init(out_dir)
 repo.create_remote(
     "origin",
-    f"https://{base_repo_user}:{base_repo_token}@git.baalajimaestro.me/baalajimaestro/personal-website.git",
+    f"ssh://git@git.baalajimaestro.me:29999/baalajimaestro/personal-website.git",
 )
 
 # Build the binaries
@@ -44,4 +44,4 @@ process = subprocess.run(["hugo", "--gc", "--minify", "-d", out_dir])
 os.chdir(out_dir)
 repo.git.add(".")
 repo.index.commit(f"[MaestroCI]: Binaries as of {current_time}")
-repo.git.push("origin", "master", force=True)
+repo.git.push("origin", "master", force=True, env=dict(GIT_SSH_COMMAND=git_ssh_cmd))
