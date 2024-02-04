@@ -16,6 +16,11 @@ description = "baalajimaestro's personal website"
   layout = "profile" # valid options: page, profile, custom
   showRecent = false
 
+[author]
+name = "baalajimaestro"
+image = "logo.webp"
+headline = "DevOps Engineer, and Self-taught System Administrator"
+
 [article]
   showDate = true
   dateFormat = "2 January 2006"
